@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <parameter name="browserName" value="${browser}"></parameter>
+  <parameter name="browserHeadLess" value="${headless}"></parameter>
+  <parameter name="browserPrivate" value="${private}"></parameter>
+  
+    <classes>
+      
+      <class name="com.qa.usermanagement.tests.RegisterTest"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
